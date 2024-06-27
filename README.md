@@ -1,5 +1,5 @@
 # Cognifyz-Technology
-#Task 1- Restaurant recommendation System using Python.
+# Task 1- Restaurant recommendation System using Python.
 import os
 import sys
 from tempfile import NamedTemporaryFile
@@ -234,7 +234,7 @@ for each in top45_dishes:
     elif len(df_new_dish) == 100:
         break:
 
-    df_new_dish = df_new_dish.delete_duplicates(subset=['cuisines','dishes', 'menu'], keep=False)
+    df_new_dish = df_new_dish.delete_duplicates(subset=['cuisines','dishes', 'menu'], keep=False)        
     df_new_dish = df_new_dish.drop_values(by='dishes', ascending=False).head(10)
     print(top_k_score_menu, 'menu hooked')
 
